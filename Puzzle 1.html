@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grimório Selado</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="puzzle1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>📜 Portal Selado</h1>
+    <p>
+      “A verdade só se revela  
+      àqueles que conhecem  
+      o nome esquecido.”
+    </p>
+
+    <input type="text" id="senha" placeholder="Digite a palavra-chave">
+    <button id="btnDesvendar">Desvendar</button>
+
+
+    <div class="erro" id="erro">
+      O grimório rejeita essa palavra…
+    </div>
+
+    <div class="mensagem" id="mensagem">
+      <strong>O selo foi quebrado.</strong><br><br>
+      “Quando os cristais silenciarem,<br>
+      a raid será inevitável.”
+    </div>
+  </div>
+
+<!-- 🔊 Áudios -->
+  <audio id="audioSucesso" src="audio/sucesso.mp3" preload="none"></audio>
+  <audio id="audioErro" src="audio/erro.mp3" preload="none"></audio>
+
+  <!-- 🎵 Música de fundo -->
+<audio id="bgm" src="audio/background.mp3" loop preload="none"></audio>
+
+
+  <!-- JavaScript -->
+  <script src="puzzle1.js"></script>
+</body>
+</html>
