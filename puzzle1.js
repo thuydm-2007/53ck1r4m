@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 🔊 Volumes
   audioSucesso.volume = 1.0;
   audioErro.volume = 1.0;
-  bgm.volume = 0.3;
+  bgm.volume = 0.7;
 
   // 🔑 Palavra secreta
   const palavraSecreta = "zeckiram";
@@ -26,7 +26,7 @@ ativarSom.addEventListener("click", () => {
   bgm.muted = false;
 
   // volume padrão da música
-  bgm.volume = 0.3;
+  bgm.volume = 0.7;
 
   bgm.play()
     .then(() => {
@@ -85,6 +85,7 @@ ativarSom.addEventListener("click", () => {
   });
 
 });
+
 
 
 
